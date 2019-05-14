@@ -7,7 +7,7 @@ services:
 
 env:
   global:
-    - VERSION=4.1.0
+    - VERSION=5.10.0
 
 script:
   - python build.py
