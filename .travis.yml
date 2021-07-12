@@ -7,7 +7,10 @@ services:
 
 env:
   global:
-    - VERSION=5.10.0
+    - VERSION=5.36.1
+
+before_script:
+  - echo "$DOCKER_PASS" | docker login -u $DOCKER_USER --password-stdin
 
 script:
   - python build.py
