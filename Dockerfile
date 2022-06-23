@@ -2,7 +2,7 @@ FROM synst/php:8.0
 MAINTAINER Synapse <mail@synapse-studio.ru>
 
 #APT-GET:::
-RUN wget https://releases.mattermost.com/6.7.0/mattermost-6.7.0-linux-amd64.tar.gz && \
+RUN wget https://releases.mattermost.com/7.0.0/mattermost-7.0.0-linux-amd64.tar.gz && \
     tar -xvzf mattermost*.gz && \
     mv mattermost /opt && \
     rm mattermost*.gz && \
