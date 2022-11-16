@@ -20,5 +20,6 @@ RUN chmod 755 /start.sh && \
 
 # Expose Ports
 EXPOSE 22
+EXPOSE 8065
 
 ENTRYPOINT ["/start.sh"]
