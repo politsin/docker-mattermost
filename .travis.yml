@@ -7,7 +7,7 @@ services:
 
 env:
   global:
-    - VERSION=5.36.1
+    - VERSION=7.9.1
 
 before_script:
   - echo "$DOCKER_PASS" | docker login -u $DOCKER_USER --password-stdin
@@ -18,7 +18,7 @@ script:
 
 after_success:
   - docker login -u $DOCKER_USER -p $DOCKER_PASS
-  - export REPO=synst/mattermost
+  - export REPO=synstd/mattermost
   - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH ; fi`
   - docker build -f Dockerfile -t $REPO .
   - docker tag $REPO $REPO:$TAG
