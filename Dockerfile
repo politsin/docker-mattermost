@@ -1,4 +1,4 @@
-FROM synstd/php:8.1
+FROM synstd/php:8.1.250
 MAINTAINER Synapse <mail@synapse-studio.ru>
 
 #APT-GET:::

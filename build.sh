@@ -2,7 +2,7 @@
 cd /opt/build/docker-mattermost
 docker build -t synstd/mattermost .
 docker tag synstd/mattermost synstd/mattermost:8.1.0
-docker login --username=synstd
+# docker login --username=synstd
 # тут нужно ввести пароль
 
 docker push synstd/mattermost
