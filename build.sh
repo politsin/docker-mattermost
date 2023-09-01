@@ -6,4 +6,4 @@ docker login --username=synstd
 # тут нужно ввести пароль
 
 docker push synstd/mattermost
-docker push synstd/mattermost:8.0.1
+docker push synstd/mattermost:8.1.0
